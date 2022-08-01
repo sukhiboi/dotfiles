@@ -1,0 +1,17 @@
+window:
+  dimensions:
+    columns: 234
+    lines: 68
+  padding:
+    x: 10
+    y: 10
+  decorations: Buttonless
+  title: Alacritty
+font:
+  family: 'Fira Code'
+  size: 12.0  
+live_config_reload: true
+shell:
+  program: /bin/zsh
+  args:
+    - --login
