@@ -8,6 +8,7 @@ set expandtab
 set smartindent
 set secure exrc
 filetype plugin on
+set foldmethod=syntax
 
 " Plugins
 call plug#begin()
