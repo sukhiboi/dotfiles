@@ -14,8 +14,10 @@ sketchybar --set $NAME \
             icon="$DOCKER_STATUS" \
             background.drawing="on" \
 	          background.padding_left=5                  \
-	          background.padding_right=5                 \
+	          background.padding_right=5                  \
 	          background.corner_radius=5                 \
+            label.docker_status=off \
+            label.drawing=off \
 	          background.height=22                       \
 
 
