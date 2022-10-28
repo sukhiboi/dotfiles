@@ -4,6 +4,7 @@
 # https://github.com/FelixKratz/dotfiles
 
 PLUGIN_DIR="$HOME/.config/sketchybar/plugins"
+WHITE_COLOR=0xB3ffffff
 
 ##### Bar Appearance #####
 # Configuring the general appearance of the bar, these are only some of the
@@ -17,7 +18,7 @@ sketchybar --bar height=32        \
                  position=top  \ 
                  padding_left=10  \
                  padding_right=10 \
-                 color=0x15ffffff
+                 color=0xffffffff
 
 ##### Changing Defaults #####
 # We now change some default values that are applied to all further items
@@ -27,9 +28,9 @@ sketchybar --bar height=32        \
 sketchybar --default updates=when_shown                    \
                      drawing=on                            \
                      icon.font="Hack Nerd Font:Bold:17.0"  \
-                     icon.color=0xffffffff                 \
+                     icon.color="$WHITE_COLOR"             \
                      label.font="Hack Nerd Font:Bold:14.0" \
-                     label.color=0xffffffff                \
+                     label.color="$WHITE_COLOR"            \
                      label.padding_left=4                  \
                      label.padding_right=4                 \
                      icon.padding_left=4                   \
@@ -40,7 +41,7 @@ sketchybar --default updates=when_shown                    \
 # https://felixkratz.github.io/SketchyBar/config/components#space----associate-mission-control-spaces-with-an-item
 # to indicate active and available mission control spaces
 
-SPACE_ICONS=("Coding" "Work" "Server" "Comms" "WorkEnv" "Mail" "7" "8" "9" "10")
+SPACE_ICONS=("Coding" "DevTools" "Browse" "Work" "Zoom" "6" "7" "8" "9" "10")
 
 for i in "${!SPACE_ICONS[@]}"
 do
@@ -76,6 +77,8 @@ sketchybar --add item clock right --set clock update_freq=1 script="$PLUGIN_DIR/
 sketchybar --add item battery right --set battery script="$PLUGIN_DIR/battery.sh" update_freq=10 --subscribe battery system_woke
 
 sketchybar --add item docker right --set docker update_freq=1 script="$PLUGIN_DIR/docker_status.sh" 
+
+sketchybar --add item wifi right --set wifi update_freq=10 script="$PLUGIN_DIR/wifi.sh" 
 
 ##### Finalizing Setup #####
 # The below command is only needed at the end of the initial configuration and
