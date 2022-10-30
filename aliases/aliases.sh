@@ -1,6 +1,6 @@
-source ./docker-aliases.sh
-source ./git-aliases.sh
-source ./tmux-aliases.sh
+source $DOTFILES_DIR/aliases/docker-aliases.sh
+source $DOTFILES_DIR/aliases/git-aliases.sh
+source $DOTFILES_DIR/aliases/tmux-aliases.sh
 
 alias l="ls -GFlha"
 alias q="clear"

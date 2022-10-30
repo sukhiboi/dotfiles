@@ -1,15 +1,15 @@
 window:
-  opacity: 1
+  opacity: 0.9
   dimensions:
     columns: 234
     lines: 68
   padding:
-    x: 2
+    x: 4
     y: 4
   decorations: Buttonless
   title: Alacritty
 font:
-  size: 12.0  
+  size: 12.0
   normal:
     family: Hack Nerd Font Mono
     style: Regular
