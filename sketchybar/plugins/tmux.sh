@@ -6,7 +6,7 @@ windowsInAttachedSession=""
 availableSessions=""
 tmuxStatus="Server Down"
 
-if [[ $(tmux has-session 2>&1) != *"no server"* ]]; then
+if [[ $(tmux has-session 2>&1) != *"tmux-501"* ]]; then
   isTmuxRunning=1
   availableSessions=$(tmux ls -F "#{session_id}: #{?session_attached,attached,not attached}" | cut -d ":" -f 1 | cut -d "$" -f2 | xargs)
   attachedSessionId=$(tmux ls -F "#{session_id}: #{?session_attached,attached,not attached}" | grep $(tmux display-message -p '#S') | grep ": attached" | cut -d ":" -f 1)
@@ -26,7 +26,6 @@ sketchybar --set \
   background.padding_left=5 \
   background.padding_right=5 \
   background.corner_radius=5 \
-  label.docker_status=off \
   label.drawing=off \
   icon.color="0xCC000000" \
   background.height=22
