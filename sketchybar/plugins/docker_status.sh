@@ -9,10 +9,12 @@ fi
 sketchybar --set \
   $NAME icon="Docker" \
   background.color="$BACKGROUND_COLOR" \
-  icon.color="0xFFFFFFFF"
+  icon.color="0xFFFFFFFF" \
   background.drawing="on" \
   icon.drawing="on" \
   background.padding_left=5 \
   background.padding_right=5 \
   background.corner_radius=5 \
-  label.drawing="off"
+  label.drawing="off" \
+  background.height=20
+

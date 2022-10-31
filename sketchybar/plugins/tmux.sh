@@ -28,4 +28,4 @@ sketchybar --set \
   background.corner_radius=5 \
   label.drawing=off \
   icon.color="0xCC000000" \
-  background.height=22
+  background.height=20
