@@ -1,0 +1,1 @@
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/local:/usr/local/Cellar:~/bin/platform-tools:~/bin/matterhorn:/Users/sukdev/.talisman/bin:~/bin/.npm-global:/usr/local/opt/openjdk@11/bin:~/bin/apache-ant-1.9.16/bin:$ANDROID_SDK_ROOT/emulator:$ANDROID_SDK_ROOT/platform-tools:$HOME/.rbenv/bin:~/bin/programs/sonar-scanner-4.7.0.2747-macosx/bin:$PATH

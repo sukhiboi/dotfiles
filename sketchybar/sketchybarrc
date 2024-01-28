@@ -45,7 +45,7 @@ sketchybar --add item battery right --set battery script="$PLUGIN_DIR/battery.sh
 
 sketchybar --add item docker right --set docker update_freq=1 script="$PLUGIN_DIR/docker_status.sh"
 
-sketchybar --add item wifi right --set wifi update_freq=10 script="$PLUGIN_DIR/wifi.sh"
+# sketchybar --add item wifi right --set wifi update_freq=10 script="$PLUGIN_DIR/wifi.sh"
 
 sketchybar --add item tmux right --set tmux update_freq=1 script="$PLUGIN_DIR/tmux.sh"
 
