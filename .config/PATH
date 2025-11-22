@@ -1,0 +1,8 @@
+paths=(
+	"$HOME/bin/.jenv/bin"
+	"$HOME/bin/.fnm"
+)
+
+for p in "${paths[@]}"; do
+	PATH="$PATH:$p"
+done

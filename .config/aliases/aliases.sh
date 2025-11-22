@@ -4,7 +4,6 @@ source $DOTFILES_DIR/aliases/docker-aliases.sh
 source $DOTFILES_DIR/aliases/git-aliases.sh
 source $DOTFILES_DIR/aliases/tmux-aliases.sh
 source $DOTFILES_DIR/aliases/kube-aliases.sh
-source $DOTFILES_DIR/aliases/yarn-aliases.sh
 source $DOTFILES_DIR/aliases/spring-aliases.sh
 
 alias l="ls -GFlha"

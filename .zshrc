@@ -8,7 +8,10 @@ plugins=(git direnv)
 source $ZSH/oh-my-zsh.sh
 
 # aliases
-source ~/.config/aliases/aliases.sh
+source $HOME/.config/aliases/aliases.sh
+
+# path updates
+source $HOME/.config/PATH
 
 # jenv
 export PATH="$HOME/.jenv/bin:$PATH"
