@@ -2,4 +2,4 @@
 	email = 41sukhdevsingh@gmail.com
 	name = sukhiboi
 [core]
-	editor = vim
+	editor = nvim
