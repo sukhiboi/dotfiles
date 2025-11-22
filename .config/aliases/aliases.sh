@@ -20,5 +20,5 @@ alias vim="nvim"
 alias ch="~/bin/cht.sh"
 alias sonarup="docker-compose -f ~/.config/scripts/sonar/docker-compose.yml  up -d"
 alias mask="awk '{printf \"%s\", substr(\$0,1,5); for(i=6; i<=length(\$0); i++) printf \"*\"; print \"\"}'"
-
+alias tree="tree -a"
 alias s='git rev-parse --git-dir > /dev/null 2>&1 && git status || l'

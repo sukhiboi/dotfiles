@@ -1,11 +1,15 @@
 export GIT_EDITOR=vim
-export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
 
 plugins=(git direnv)
 
-source $ZSH/oh-my-zsh.sh
+source $HOME/bin/oh-my-zsh/oh-my-zsh.sh
+
+setopt autocd
+setopt correct
+setopt hist_ignore_dups
+setopt share_history
 
 # aliases
 source $HOME/.config/aliases/aliases.sh
