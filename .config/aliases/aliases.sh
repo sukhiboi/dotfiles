@@ -1,4 +1,4 @@
-export DOTFILES_DIR="/Users/sukhdev/.config"
+export DOTFILES_DIR="$HOME/.config"
 
 source $DOTFILES_DIR/aliases/docker-aliases.sh
 source $DOTFILES_DIR/aliases/git-aliases.sh
